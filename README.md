@@ -1,29 +1,33 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
+| Name         | Lingxiao Li                |
+| Date         | 02/04/2024                 |
 | Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Assignment # | 1                          |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+This assignment is to design a beverage vending machine which provide either tea or coffee.
+There are Espresso, Americano, and Latte Macchiato for coffee.
+There are Black, Green, and Yellow for tea.
+Each drink can add condiment MILK or SUGAR, each type can add 3 units in maximum.
+Tea can neither add MILK nor SUGAR, because it doesn't taste good.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/Sakura1a2a3a/CS-665-assignment-1
 
 # Implementation Description 
 
 
 For each assignment, please answer the following:
 
-- Explain the level of flexibility in your implementation, including how new object types can
-be easily added or removed in the future.
-- Discuss the simplicity and understandability of your implementation, ensuring that it is
-easy for others to read and maintain.
-- Describe how you have avoided duplicated code and why it is important.
-- If applicable, mention any design patterns you have used and explain why they were
-chosen.
+- I can choose to add more condiments later and I don't have to add many codes because of enum class implementation. 
+I can also easily add more type of drink by simply inherent from Beverage abstract class. So that it is quite flexible.
+- The addCondiments and calculatePrice are both in beverage class, and Vendor class will always only contain one 
+object of discrete beverage. So that it is each to maintain or edit the code.
+- I use Enum class and abstract class to minimize the duplicate codes, it is very important
+for robustness and code consistency.
+- This assignment one doesn't follow any design pattern.
 
 
 # Maven Commands
